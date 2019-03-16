@@ -1,0 +1,13 @@
+server:
+  port: 10000
+spring:
+  data:
+    mongodb:
+      uri: mongodb://106.12.90.33:27017/graduation
+
+
+
+lin-chen:
+  token-verify:
+    verifyURL:
+      - PUT /api/user/**
