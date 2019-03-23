@@ -10,4 +10,11 @@ spring:
 lin-chen:
   token-verify:
     verifyURL:
+      - GET /admin/**
+      - PUT /admin/**
+      - DELETE /admin/**
+
+
       - PUT /api/user/**
+
+

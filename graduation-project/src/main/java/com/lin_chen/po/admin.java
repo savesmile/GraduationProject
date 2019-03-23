@@ -7,29 +7,16 @@ import lombok.Setter;
 import lombok.experimental.Accessors;
 
 /**
- * 用户信息
+ * @author F_lin
+ * @since 2019/3/23
  **/
 @Setter
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
 @Accessors(chain = true)
-public class User {
-    /**
-     * 默认男性
-     */
-    public static final int SEX_MALE = 0;
-    /**
-     * 默认女性
-     */
-    public static final int SEX_FEMALE = 1;
-
+public class admin {
     private String id;
-    private int sex;
-    private String nickName;
     private String username;
     private String password;
-    private String introduction;
-    private String avatar;
-
 }

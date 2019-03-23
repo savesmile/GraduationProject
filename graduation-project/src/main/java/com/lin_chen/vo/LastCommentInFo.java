@@ -6,15 +6,18 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.experimental.Accessors;
 
+import java.util.Date;
+
 /**
- * 注册需要传入的信息
+ * @author F_lin
+ * @since 2019/3/23
  **/
 @Setter
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
 @Accessors(chain = true)
-public class SignPosts {
-    private String username;
-    private String password;
+public class LastCommentInFo {
+    private String userId;
+    private Date commentTime;
 }

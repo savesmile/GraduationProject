@@ -1,20 +1,20 @@
 package com.lin_chen.vo;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.experimental.Accessors;
 
 /**
- * 注册需要传入的信息
+ * @author F_lin
+ * @since 2019/3/23
  **/
 @Setter
 @Getter
-@AllArgsConstructor
 @NoArgsConstructor
 @Accessors(chain = true)
-public class SignPosts {
-    private String username;
-    private String password;
+public class PostTopicVO {
+    private String title;
+    private String content;
+    private String type;
 }

@@ -2,9 +2,9 @@ package com.lin_chen.controller;
 
 import com.lin_chen.filter.Token;
 import com.lin_chen.po.JsonResult;
-import com.lin_chen.vo.SignPosts;
 import com.lin_chen.po.User;
 import com.lin_chen.util.*;
+import com.lin_chen.vo.SignPosts;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,13 +30,13 @@ public class SignInController {
      */
     @PostMapping("/sign_in")
     public Object signIn(@RequestBody SignPosts signInPosts) {
-        if (StringUtils.isEmpty(signInPosts.getPassword()) || StringUtils.isEmpty(signInPosts.getPhone()))
+        if (StringUtils.isEmpty(signInPosts.getPassword()) || StringUtils.isEmpty(signInPosts.getUsername()))
             return JsonResult.error("用户名或密码不能为空");
-        User user = mongoOperations.findOne(Query.query(Criteria.where("phone").is(signInPosts.getPhone())), User.class);
+        User user = mongoOperations.findOne(Query.query(Criteria.where("username").is(signInPosts.getUsername())), User.class);
         String pwd = MD5Util.getMD5(signInPosts.getPassword());
         if (StringUtils.isNotEmpty(pwd) && !pwd.equals(user.getPassword()))
             return JsonResult.error("用户名或密码错误");
-        log.info("用户 {} 登录成功", signInPosts.getPhone());
+        log.info("用户 {} 登录成功", signInPosts.getUsername());
         return JsonResult.success(MapBuilder
                 .forTypeSO("token", TokenUtils.encryptionToken(new Token(user.getId())))
                 .with("userInfo", user.setPassword(null)).build());

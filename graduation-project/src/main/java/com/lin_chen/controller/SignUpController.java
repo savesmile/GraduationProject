@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
  * 注册
  **/
 @RestController
-@RequestMapping("/api/user/sign-up")
+@RequestMapping("/api/user/sign_up")
 public class SignUpController {
 
     private static final String DEFAULT_AVATAR = "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1552742446263&di=9188d9643a8549b77add4fceeb204faa&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201709%2F06%2F20170906180625_YNysd.jpeg";
@@ -35,15 +35,15 @@ public class SignUpController {
      */
     @PostMapping
     public Object signUp(@RequestBody SignPosts signUpPosts) {
-        if (mongoOperations.exists(Query.query(Criteria.where("phone").is(signUpPosts.getPhone())), User.class)) {
+        if (mongoOperations.exists(Query.query(Criteria.where("username").is(signUpPosts.getUsername())), User.class)) {
             return JsonResult.error("该用户名已经存在!");
         }
         mongoOperations.save(new User()
                 .setAvatar(DEFAULT_AVATAR)
-                .setNickName("用户" + signUpPosts.getPhone())
-                .setPhone(signUpPosts.getPhone())
+                .setNickName("用户" + signUpPosts.getUsername())
+                .setUsername(signUpPosts.getUsername())
                 .setPassword(MD5Util.getMD5(signUpPosts.getPassword())));
-        User user = mongoOperations.findOne(Query.query(Criteria.where("phone").is(signUpPosts.getPhone())), User.class);
+        User user = mongoOperations.findOne(Query.query(Criteria.where("username").is(signUpPosts.getUsername())), User.class);
         if (user == null) {
             return JsonResult.error("user不存在");
         }

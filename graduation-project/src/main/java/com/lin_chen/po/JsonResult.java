@@ -6,8 +6,7 @@ import lombok.Setter;
 import lombok.experimental.Accessors;
 
 /**
- * @author F_lin
- * @since 2018/4/5
+ * 通用 http请求数据返回格式
  **/
 @Setter
 @Getter

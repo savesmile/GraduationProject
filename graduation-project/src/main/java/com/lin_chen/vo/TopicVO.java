@@ -6,15 +6,22 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.experimental.Accessors;
 
+import java.util.List;
+
 /**
- * 注册需要传入的信息
+ * @author F_lin
+ * @since 2019/3/23
  **/
 @Setter
 @Getter
 @AllArgsConstructor
 @NoArgsConstructor
 @Accessors(chain = true)
-public class SignPosts {
-    private String username;
-    private String password;
+public class TopicVO {
+    private String id;
+    private String authorId;
+    private String authorAvatar;
+    private String title;
+    private String content;
+    private List<CommentVO> comments;
 }
