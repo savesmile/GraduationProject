@@ -1,6 +1,7 @@
 package com.lin_chen.controller;
 
 import com.lin_chen.po.Comment;
+import com.lin_chen.po.JsonResult;
 import com.lin_chen.po.Topic;
 import com.lin_chen.service.CommentService;
 import com.lin_chen.service.UserService;
@@ -14,10 +15,7 @@ import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.Collections;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 
 /**
@@ -36,74 +34,121 @@ public class TopicController {
     MongoOperations mongoOperations;
 
     @GetMapping("/index")
-    public List<TopicIndexVO> getTopicList(
+    public Object getTopicList(
             @UserId(required = false) String userId,
             @RequestParam(defaultValue = "0", required = false) Integer page,
-            @RequestParam(defaultValue = "5", required = false) Integer size) {
+            @RequestParam(defaultValue = "5", required = false) Integer size,
+            @RequestParam(required = false) String type,
+            @RequestParam(required = false) String keyWord) {
         Query query = new Query();
         query.with(new Sort(Sort.Direction.DESC, "createTime"));
-        query.skip((page - 1) * size);
-        query.limit(size);
+
         if (StringUtils.isNotEmpty(userId)) {
             query.addCriteria(Criteria.where("userId").is(userId));
         }
+
+        if (StringUtils.isNotEmpty(type)) {
+            query.addCriteria(Criteria.where("type").is(type));
+            if (type.equals("boutique")) {
+                query.addCriteria(Criteria.where("isBoutique").is(true));
+            }
+        }
+
+        if (StringUtils.isNotEmpty(keyWord)) {
+            query.addCriteria(Criteria.where("title").regex(keyWord));
+        }
+
+        int topicCount = (int) mongoOperations.count(query, Topic.class);
+        query.skip((page - 1) * size);
+        query.limit(size);
         List<Topic> topics = mongoOperations.find(query, Topic.class);
         if (!topics.isEmpty()) {
-            return topics.stream().map(topic -> {
+            List<TopicIndexVO> collect = topics.stream().map(topic -> {
                 TopicIndexVO topicIndexVO = TopicIndexVO.switchTopicVO(topic);
                 SimpleUser author = userService.getUserById(topic.getUserId());
                 topicIndexVO.setAuthorName(author.getUsername());
                 int count = commentService.getCommentCountByTopId(topic.getId());
                 topicIndexVO.setCommentNum(count);
                 LastCommentInFo lastCommentInfo = commentService.getLastCommentUser(topic.getId());
-                SimpleUser lastUser = userService.getUserById(lastCommentInfo.getUserId());
-                topicIndexVO.setLastAnswerName(lastUser.getUsername());
-                topicIndexVO.setLastCommentTime(lastCommentInfo.getCommentTime());
+                if (lastCommentInfo != null) {
+                    SimpleUser lastUser = userService.getUserById(lastCommentInfo.getUserId());
+                    topicIndexVO.setLastAnswerName(lastUser.getUsername());
+                    topicIndexVO.setLastCommentTime(lastCommentInfo.getCommentTime());
+                }
                 return topicIndexVO;
             }).collect(Collectors.toList());
+
+            int val1 = topicCount / size;
+            int val2 = topicCount % size;
+            if (val2 != 0) {
+                ++val1;
+            }
+            return JsonResult.success(collect).setPageData(new JsonResult.PageData(val1, page, topicCount));
         }
-        return Collections.emptyList();
+        return JsonResult.error("无相关数据");
     }
 
     @PostMapping("/one")
-    public void postTopic(@UserId String userId,
-                          @RequestBody PostTopicVO postTopicVO) {
+    public JsonResult postTopic(@UserId String userId,
+                                @RequestBody PostTopicVO postTopicVO) {
         Topic topic = new Topic();
         topic.setTitle(postTopicVO.getTitle());
         topic.setContent(postTopicVO.getContent());
         topic.setUserId(userId);
         topic.setCreateTime(new Date());
         topic.setType(postTopicVO.getType());
+        mongoOperations.save(topic);
+        return JsonResult.success();
     }
 
     @GetMapping("/one/{id}")
-    public TopicVO getTopic(@PathVariable("id") String topicId) {
+    public Object getTopic(@PathVariable("id") String topicId) {
         Topic topic = mongoOperations.findById(topicId, Topic.class);
-        if (topic == null) return new TopicVO();
+        if (topic == null) return JsonResult.error("错误的帖子id");
         TopicVO vo = new TopicVO();
+        vo.setId(topicId);
         vo.setTitle(topic.getTitle());
         vo.setContent(topic.getContent());
         vo.setAuthorId(topic.getUserId());
         vo.setComments(Collections.emptyList());
+        vo.setCreateTime(topic.getCreateTime());
+        SimpleUser author = userService.getUserById(topic.getUserId());
+        vo.setAuthorAvatar(author.getAvatar());
+        vo.setAuthorName(author.getNickName());
+
         List<Comment> comments = commentService.getCommentsByTopicId(topicId);
         if (!comments.isEmpty()) {
             HashMap<String, CommentVO> firstLevelComment = new HashMap<>();
             for (Comment comment : comments) {
                 if (comment.isFirstLevelReply()) {
-                    firstLevelComment.put(comment.getId(), CommentVO.switchCommentVO(comment));
+                    CommentVO commentVO = CommentVO.switchCommentVO(comment);
+                    SimpleUser user1 = userService.getUserById(comment.getUserId());
+                    commentVO.setAuthorAvatar(user1.getAvatar());
+                    commentVO.setAuthorName(user1.getNickName());
+
+                    firstLevelComment.put(comment.getId(), commentVO);
                 }
             }
 
-            List<CommentVO> commentVOS = comments.stream()
+            comments.stream()
                     .filter(comment -> !comment.isFirstLevelReply())
                     .map(comment -> {
-                        CommentVO fatherCommentVO = firstLevelComment.get(comment.getId());
-                        return CommentVO.addSunComment(fatherCommentVO, comment);
+                        CommentVO fatherCommentVO = firstLevelComment.get(comment.getFatherCommentId());
+                        CommentVO commentVO = CommentVO.switchCommentVO(comment);
+                        SimpleUser user2 = userService.getUserById(comment.getUserId());
+                        commentVO.setAuthorAvatar(user2.getAvatar());
+                        commentVO.setAuthorName(user2.getNickName());
+
+                        CommentVO faCommentVo = CommentVO.addSunComment(fatherCommentVO, commentVO);
+                        firstLevelComment.put(faCommentVo.getId(), faCommentVo);
+
+                        return faCommentVo;
                     })
                     .collect(Collectors.toList());
-            vo.setComments(commentVOS);
+
+            vo.setComments(new ArrayList<>(firstLevelComment.values()));
         }
-        return vo;
+        return JsonResult.success(vo);
     }
 
 }

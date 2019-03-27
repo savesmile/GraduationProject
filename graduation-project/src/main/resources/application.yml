@@ -14,7 +14,15 @@ lin-chen:
       - PUT /admin/**
       - DELETE /admin/**
 
+      - POST /api/topics/**
 
+      - GET /api/user/**
+      - POST /api/user/info
       - PUT /api/user/**
+      - DELETE /api/user/**
+
+      - POST /api/comments/**
+      - GET /api/comments/one
+      - GET /api/comments/me
 
 

@@ -28,7 +28,7 @@ public class TokenVerifyProperties {
     public boolean needVerify(String method, String url) {
         return verifyURL.stream().anyMatch(verifyStr -> {
             VerifyURL verifyURL = VerifyURL.analyzeURL(verifyStr);
-            if (verifyURL.getMethod().equals(method)) {
+            if (verifyURL.getMethod().equals("ALL") || verifyURL.getMethod().equals(method)) {
                 String template = verifyURL.getUrl();
                 String replacement = "\\D*/*";
                 if (template.endsWith("**")) {

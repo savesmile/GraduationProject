@@ -47,6 +47,10 @@ public class SignUpController {
         if (user == null) {
             return JsonResult.error("user不存在");
         }
-        return JsonResult.success(MapBuilder.of("token", TokenUtils.encryptionToken(new Token(user.getId()))));
+        return JsonResult.success(
+                MapBuilder.forTypeSO("token", TokenUtils.encryptionToken(new Token(user.getId())))
+                        .with("nickName", "用户" + signUpPosts.getUsername())
+                        .build()
+        );
     }
 }

@@ -2,7 +2,7 @@ package com.lin_chen;
 
 import com.lin_chen.filter.AccessTokenVerifyInterceptor;
 import com.lin_chen.filter.TokenVerifyProperties;
-import com.lin_chen.util.UserIdMethodArgumentResolver;
+import com.lin_chen.filter.UserIdMethodArgumentResolver;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -15,9 +15,11 @@ import lombok.Setter;
 public class SimpleUser {
     private String username;
     private String avatar;
+    private String nickName;
 
     public SimpleUser(User user) {
         this.username = user.getUsername();
         this.avatar = user.getAvatar();
+        this.nickName = user.getNickName();
     }
 }

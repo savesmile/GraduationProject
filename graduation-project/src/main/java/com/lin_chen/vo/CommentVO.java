@@ -9,6 +9,7 @@ import lombok.experimental.Accessors;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -23,8 +24,12 @@ import java.util.List;
 public class CommentVO {
     private String id;
     private String userId;
-    private String userAvatar;
+    private String belongTopicId;
+    private String belongTopic;
+    private String authorAvatar;
+    private String authorName;
     private String content;
+    private Date createTime;
     private List<CommentVO> sunComment;
 
     public static CommentVO switchCommentVO(Comment comment) {
@@ -33,17 +38,18 @@ public class CommentVO {
         vo.setId(comment.getId());
         vo.setUserId(comment.getUserId());
         vo.setSunComment(Collections.emptyList());
+        vo.setCreateTime(comment.getCommitTime());
         return vo;
     }
 
-    public static CommentVO addSunComment(CommentVO father, Comment comment) {
-        CommentVO sun = switchCommentVO(comment);
+    public static CommentVO addSunComment(CommentVO father, CommentVO sun) {
         List<CommentVO> sunComments = father.getSunComment();
         if (sunComments.isEmpty()) {
             father.setSunComment(new ArrayList<>(Collections.singletonList(sun)));
+        } else {
+            sunComments.add(sun);
+            father.setSunComment(sunComments);
         }
-        sunComments.add(sun);
-        father.setSunComment(sunComments);
         return father;
     }
 

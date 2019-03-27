@@ -6,6 +6,8 @@ import org.apache.catalina.connector.RequestFacade;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.Ordered;
+import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 
@@ -32,7 +34,8 @@ public class AccessTokenVerifyInterceptor extends HandlerInterceptorAdapter {
         response.setCharacterEncoding("UTF-8");
         setOrigin(response);
         if (tokenVerifyProperties.needVerify(method, requestURI)) {
-            String token = request.getParameter("token");
+            String tokenOfHeader = request.getHeader("token");
+            String token = tokenOfHeader == null ? request.getParameter("token") : tokenOfHeader;
             if (token != null) {
                 Token tokenEntity;
                 try {

@@ -19,7 +19,8 @@ public class TopicIndexVO {
     private String id;
     private String title;
     private String content;
-
+    private String type;
+    private Date createDate;
     /**
      * 回答数
      */
@@ -39,8 +40,12 @@ public class TopicIndexVO {
 
 
     public static TopicIndexVO switchTopicVO(Topic topic) {
-        return new TopicIndexVO().setId(topic.getId())
+        TopicIndexVO topicIndexVO = new TopicIndexVO()
+                .setId(topic.getId())
                 .setTitle(topic.getTitle())
+                .setType(topic.getType())
                 .setContent(topic.getContent());
+        topicIndexVO.setCreateDate(topic.getCreateTime());
+        return topicIndexVO;
     }
 }

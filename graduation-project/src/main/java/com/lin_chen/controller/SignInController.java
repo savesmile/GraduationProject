@@ -4,6 +4,7 @@ import com.lin_chen.filter.Token;
 import com.lin_chen.po.JsonResult;
 import com.lin_chen.po.User;
 import com.lin_chen.util.*;
+import com.lin_chen.vo.ResetPwd;
 import com.lin_chen.vo.SignPosts;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -42,11 +43,18 @@ public class SignInController {
                 .with("userInfo", user.setPassword(null)).build());
     }
 
-    @PutMapping("/reset_pwd")
+    @PostMapping("/reset_pwd")
     public Object resetPwd(@UserId String userId,
-                           @RequestBody SignPosts resetPosts) {
-        mongoOperations.updateFirst(Query.query(Criteria.where("_id").is(userId)),
-                Update.update("password", MD5Util.getMD5(resetPosts.getPassword())), User.class);
+                           @RequestBody ResetPwd resetPwd) {
+        User user = mongoOperations.findById(userId, User.class);
+
+        if (!user.getPassword().equals(MD5Util.getMD5(resetPwd.getOldPwd()))) {
+            return JsonResult.error("旧密码不正确，请重新输入");
+        }
+
+        mongoOperations.updateFirst(
+                Query.query(Criteria.where("_id").is(userId)),
+                Update.update("password", MD5Util.getMD5(resetPwd.getNewPwd())), User.class);
         return JsonResult.success(MapBuilder.of("result", true));
     }
 }

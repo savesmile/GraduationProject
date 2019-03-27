@@ -1,5 +1,6 @@
 package com.lin_chen.po;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -27,6 +28,7 @@ public class JsonResult {
     private int code;
     private String msg;
     private Object data;
+    private PageData pageData;
 
     /**
      * 创建一个成功的响应
@@ -92,5 +94,15 @@ public class JsonResult {
         this.code = code;
         this.msg = msg;
         this.data = data;
+    }
+
+    @Setter
+    @Getter
+    @AllArgsConstructor
+    @NoArgsConstructor
+    public static class PageData {
+        private Integer count;
+        private Integer curPage;
+        private Integer allCount;
     }
 }

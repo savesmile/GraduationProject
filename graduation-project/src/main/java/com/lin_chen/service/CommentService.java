@@ -7,6 +7,7 @@ import org.springframework.data.domain.Sort;
 import org.springframework.data.mongodb.core.MongoOperations;
 import org.springframework.data.mongodb.core.query.Criteria;
 import org.springframework.data.mongodb.core.query.Query;
+import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -31,11 +32,21 @@ public class CommentService {
         query.fields().include("userId").include("commitTime");
         query.limit(1);
         Comment one = mongoOperations.findOne(query, Comment.class);
+        if (one == null) return null;
         return new LastCommentInFo().setUserId(one.getUserId()).setCommentTime(one.getCommitTime());
     }
 
     public List<Comment> getCommentsByTopicId(String topicId) {
-        return mongoOperations.find(Query.query(Criteria.where("topicId").is(topicId)), Comment.class);
+        Query query = Query.query(Criteria.where("topicId").is(topicId));
+        query.with(new Sort(Sort.Direction.DESC, "_id"));
+        return mongoOperations.find(query, Comment.class);
+    }
+
+
+    public boolean updateComment(String commentId, Comment comment) {
+        return mongoOperations.updateFirst(Query.query(Criteria.where("_id").is(commentId)),
+                Update.update("content", comment.getContent()),
+                Comment.class).getModifiedCount() > 0;
     }
 
 }

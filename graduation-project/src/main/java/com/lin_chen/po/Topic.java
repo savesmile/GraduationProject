@@ -16,7 +16,14 @@ import java.util.Date;
 @AllArgsConstructor
 public class Topic {
     private String id;
+    /**
+     * 类别
+     */
     private String type;
+    /**
+     * 是否加精
+     */
+    private boolean isBoutique;
     /**
      * 作者id
      */
