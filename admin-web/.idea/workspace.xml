@@ -1,0 +1,842 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9459ebc3-e618-4597-af29-89fd390ba9ab" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CheckStyle-IDEA-workspace">
+    <option name="configuration">
+      <map>
+        <entry key="last-active-plugin-version" value="5.23.0" />
+      </map>
+    </option>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web-ui/login/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="826">
+              <caret line="101" column="11" lean-forward="false" selection-start-line="76" selection-start-column="8" selection-end-line="101" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="jQuery.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web-ui/resources/common/jQuery.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216846">
+              <caret line="10338" column="22" lean-forward="false" selection-start-line="10338" selection-start-column="22" selection-end-line="10338" selection-end-column="22" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web-ui/common/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="601">
+              <caret line="475" column="15" lean-forward="false" selection-start-line="475" selection-start-column="15" selection-end-line="475" selection-end-column="15" />
+              <folding>
+                <element signature="n#script#1;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#script#2;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#script#3;n#html#0;n#!!top" expanded="false" />
+                <element signature="e#7135#7542#0" expanded="false" />
+                <element signature="e#7576#9569#0" expanded="false" />
+                <element signature="e#9602#12714#0" expanded="false" />
+                <element signature="e#12749#14827#0" expanded="false" />
+                <element signature="e#14902#15548#0" expanded="false" />
+                <element signature="e#15587#16089#0" expanded="false" />
+                <element signature="e#16126#16634#0" expanded="false" />
+                <element signature="e#16673#17183#0" expanded="false" />
+                <element signature="e#16820#16868#0" expanded="false" />
+                <element signature="e#19174#20647#0" expanded="false" />
+                <element signature="e#21274#22335#0" expanded="false" />
+                <marker date="1553692592959" expanded="true" signature="8498:8510" ph="..." />
+                <marker date="1553692592959" expanded="true" signature="8990:8998" ph="&amp;##xe642;" />
+                <marker date="1553692592959" expanded="true" signature="9259:9267" ph="&amp;##xe640;" />
+                <marker date="1553692592959" expanded="true" signature="11296:11304" ph="&amp;##xe642;" />
+                <marker date="1553692592959" expanded="true" signature="11566:11574" ph="&amp;##xe640;" />
+                <marker date="1553692592959" expanded="true" signature="11924:11932" ph="&amp;##xe67a;" />
+                <marker date="1553692592959" expanded="true" signature="12274:12282" ph="&amp;##xe67b;" />
+                <marker date="1553692592959" expanded="true" signature="14242:14250" ph="&amp;##xe642;" />
+                <marker date="1553692592959" expanded="true" signature="14514:14522" ph="&amp;##xe640;" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>formDemo</find>
+    </findStrings>
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/web-ui/resources/common/jQuery.js" />
+        <option value="$PROJECT_DIR$/web-ui/common/topic.html" />
+        <option value="$PROJECT_DIR$/web-ui/common/user.html" />
+        <option value="$PROJECT_DIR$/web-ui/common/common.html" />
+        <option value="$PROJECT_DIR$/web-ui/common/comment.html" />
+        <option value="$PROJECT_DIR$/web-ui/common/menu.html" />
+        <option value="$PROJECT_DIR$/web-ui/resources/common/user.js" />
+        <option value="$PROJECT_DIR$/web-ui/login/login.html" />
+        <option value="$PROJECT_DIR$/web-ui/common/index.html" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="360" />
+    <option name="y" value="55" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="admin-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin-web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="admin-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin-web" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="admin-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin-web" type="462c0819:PsiDirectoryNode" />
+              <item name="layui-v2.4.5" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="admin-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin-web" type="462c0819:PsiDirectoryNode" />
+              <item name="layui-v2.4.5" type="462c0819:PsiDirectoryNode" />
+              <item name="文档与示例" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="admin-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin-web" type="462c0819:PsiDirectoryNode" />
+              <item name="web-ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="admin-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin-web" type="462c0819:PsiDirectoryNode" />
+              <item name="web-ui" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="admin-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin-web" type="462c0819:PsiDirectoryNode" />
+              <item name="web-ui" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="admin-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin-web" type="462c0819:PsiDirectoryNode" />
+              <item name="web-ui" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="admin-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin-web" type="462c0819:PsiDirectoryNode" />
+              <item name="web-ui" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="admin-web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="admin-web" type="462c0819:PsiDirectoryNode" />
+              <item name="web-ui" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="layui" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\workspace\graduation-project\admin-web\web-ui\resources" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\workspace\graduation-project\admin-web\web-ui\common" />
+      <recent name="E:\workspace\graduation-project\admin-web\web-ui\resources\common" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9459ebc3-e618-4597-af29-89fd390ba9ab" name="Default" comment="" />
+      <created>1553326413439</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1553326413439</updated>
+      <workItem from="1553326414765" duration="7567000" />
+      <workItem from="1553404025170" duration="9690000" />
+      <workItem from="1553501125711" duration="14609000" />
+      <workItem from="1553522286002" duration="11000" />
+      <workItem from="1553611258409" duration="144000" />
+      <workItem from="1553682339142" duration="342000" />
+      <workItem from="1553682686563" duration="9576000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="41939000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="67" y="-8" width="1861" height="1096" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32981676" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2370905" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24986118" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="5" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/web-ui/login/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="903">
+          <caret line="43" column="107" lean-forward="false" selection-start-line="43" selection-start-column="107" selection-end-line="43" selection-end-column="107" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-ui/resources/common/jQuery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217098">
+          <caret line="10338" column="22" lean-forward="false" selection-start-line="10338" selection-start-column="22" selection-end-line="10338" selection-end-column="22" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-ui/common/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4599">
+          <caret line="324" column="0" lean-forward="true" selection-start-line="324" selection-start-column="0" selection-end-line="324" selection-end-column="0" />
+          <folding>
+            <element signature="n#script#1;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#script#2;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#script#3;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#7135#7542#0" expanded="false" />
+            <element signature="e#7576#9569#0" expanded="false" />
+            <element signature="e#9602#12714#0" expanded="false" />
+            <element signature="e#12749#14827#0" expanded="false" />
+            <element signature="e#14902#15548#0" expanded="false" />
+            <element signature="e#15587#16089#0" expanded="false" />
+            <element signature="e#16126#16634#0" expanded="false" />
+            <element signature="e#16673#17183#0" expanded="false" />
+            <element signature="e#16820#16868#0" expanded="false" />
+            <element signature="e#19174#20647#0" expanded="false" />
+            <element signature="e#21274#22335#0" expanded="false" />
+            <marker date="1553692592959" expanded="true" signature="8498:8510" ph="..." />
+            <marker date="1553692592959" expanded="true" signature="8990:8998" ph="&amp;##xe642;" />
+            <marker date="1553692592959" expanded="true" signature="9259:9267" ph="&amp;##xe640;" />
+            <marker date="1553692592959" expanded="true" signature="11296:11304" ph="&amp;##xe642;" />
+            <marker date="1553692592959" expanded="true" signature="11566:11574" ph="&amp;##xe640;" />
+            <marker date="1553692592959" expanded="true" signature="11924:11932" ph="&amp;##xe67a;" />
+            <marker date="1553692592959" expanded="true" signature="12274:12282" ph="&amp;##xe67b;" />
+            <marker date="1553692592959" expanded="true" signature="14242:14250" ph="&amp;##xe642;" />
+            <marker date="1553692592959" expanded="true" signature="14514:14522" ph="&amp;##xe640;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-ui/login/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1155">
+          <caret line="55" column="18" lean-forward="false" selection-start-line="55" selection-start-column="18" selection-end-line="60" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-ui/resources/common/jQuery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217098">
+          <caret line="10338" column="22" lean-forward="false" selection-start-line="10338" selection-start-column="22" selection-end-line="10338" selection-end-column="22" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97461">
+          <caret line="4641" column="4" lean-forward="false" selection-start-line="4641" selection-start-column="4" selection-end-line="4641" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-ui/common/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="n#script#1;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#script#2;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#script#3;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#7135#7542#0" expanded="false" />
+            <element signature="e#7576#9569#0" expanded="false" />
+            <element signature="e#9602#12714#0" expanded="false" />
+            <element signature="e#12749#14827#0" expanded="false" />
+            <element signature="e#14902#15548#0" expanded="false" />
+            <element signature="e#15587#16089#0" expanded="false" />
+            <element signature="e#16126#16634#0" expanded="false" />
+            <element signature="e#16673#17183#0" expanded="false" />
+            <element signature="e#16820#16868#0" expanded="false" />
+            <element signature="e#19174#20647#0" expanded="false" />
+            <element signature="e#21274#22335#0" expanded="false" />
+            <marker date="1553692592959" expanded="true" signature="8498:8510" ph="..." />
+            <marker date="1553692592959" expanded="true" signature="8990:8998" ph="&amp;##xe642;" />
+            <marker date="1553692592959" expanded="true" signature="9259:9267" ph="&amp;##xe640;" />
+            <marker date="1553692592959" expanded="true" signature="11296:11304" ph="&amp;##xe642;" />
+            <marker date="1553692592959" expanded="true" signature="11566:11574" ph="&amp;##xe640;" />
+            <marker date="1553692592959" expanded="true" signature="11924:11932" ph="&amp;##xe67a;" />
+            <marker date="1553692592959" expanded="true" signature="12274:12282" ph="&amp;##xe67b;" />
+            <marker date="1553692592959" expanded="true" signature="14242:14250" ph="&amp;##xe642;" />
+            <marker date="1553692592959" expanded="true" signature="14514:14522" ph="&amp;##xe640;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-ui/login/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1155">
+          <caret line="55" column="18" lean-forward="false" selection-start-line="55" selection-start-column="18" selection-end-line="60" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-ui/resources/common/jQuery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217098">
+          <caret line="10338" column="22" lean-forward="false" selection-start-line="10338" selection-start-column="22" selection-end-line="10338" selection-end-column="22" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97461">
+          <caret line="4641" column="4" lean-forward="false" selection-start-line="4641" selection-start-column="4" selection-end-line="4641" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-ui/common/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2520">
+          <caret line="120" column="0" lean-forward="false" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+          <folding>
+            <element signature="n#script#1;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#script#2;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#script#3;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#7135#7542#0" expanded="false" />
+            <element signature="e#7576#9569#0" expanded="false" />
+            <element signature="e#9602#12714#0" expanded="false" />
+            <element signature="e#12749#14827#0" expanded="false" />
+            <element signature="e#14902#15548#0" expanded="false" />
+            <element signature="e#15587#16089#0" expanded="false" />
+            <element signature="e#16126#16634#0" expanded="false" />
+            <element signature="e#16673#17183#0" expanded="false" />
+            <element signature="e#16820#16868#0" expanded="false" />
+            <element signature="e#19174#20647#0" expanded="false" />
+            <element signature="e#21274#22335#0" expanded="false" />
+            <marker date="1553692592959" expanded="true" signature="8498:8510" ph="..." />
+            <marker date="1553692592959" expanded="true" signature="8990:8998" ph="&amp;##xe642;" />
+            <marker date="1553692592959" expanded="true" signature="9259:9267" ph="&amp;##xe640;" />
+            <marker date="1553692592959" expanded="true" signature="11296:11304" ph="&amp;##xe642;" />
+            <marker date="1553692592959" expanded="true" signature="11566:11574" ph="&amp;##xe640;" />
+            <marker date="1553692592959" expanded="true" signature="11924:11932" ph="&amp;##xe67a;" />
+            <marker date="1553692592959" expanded="true" signature="12274:12282" ph="&amp;##xe67b;" />
+            <marker date="1553692592959" expanded="true" signature="14242:14250" ph="&amp;##xe642;" />
+            <marker date="1553692592959" expanded="true" signature="14514:14522" ph="&amp;##xe640;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-ui/login/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1155">
+          <caret line="55" column="18" lean-forward="false" selection-start-line="55" selection-start-column="18" selection-end-line="60" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-ui/resources/common/jQuery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217098">
+          <caret line="10338" column="22" lean-forward="false" selection-start-line="10338" selection-start-column="22" selection-end-line="10338" selection-end-column="22" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97461">
+          <caret line="4641" column="4" lean-forward="false" selection-start-line="4641" selection-start-column="4" selection-end-line="4641" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-ui/common/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2520">
+          <caret line="120" column="0" lean-forward="false" selection-start-line="120" selection-start-column="0" selection-end-line="120" selection-end-column="0" />
+          <folding>
+            <element signature="n#script#1;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#script#2;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#script#3;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#7135#7542#0" expanded="false" />
+            <element signature="e#7576#9569#0" expanded="false" />
+            <element signature="e#9602#12714#0" expanded="false" />
+            <element signature="e#12749#14827#0" expanded="false" />
+            <element signature="e#14902#15548#0" expanded="false" />
+            <element signature="e#15587#16089#0" expanded="false" />
+            <element signature="e#16126#16634#0" expanded="false" />
+            <element signature="e#16673#17183#0" expanded="false" />
+            <element signature="e#16820#16868#0" expanded="false" />
+            <element signature="e#19174#20647#0" expanded="false" />
+            <element signature="e#21274#22335#0" expanded="false" />
+            <marker date="1553692592959" expanded="true" signature="8498:8510" ph="..." />
+            <marker date="1553692592959" expanded="true" signature="8990:8998" ph="&amp;##xe642;" />
+            <marker date="1553692592959" expanded="true" signature="9259:9267" ph="&amp;##xe640;" />
+            <marker date="1553692592959" expanded="true" signature="11296:11304" ph="&amp;##xe642;" />
+            <marker date="1553692592959" expanded="true" signature="11566:11574" ph="&amp;##xe640;" />
+            <marker date="1553692592959" expanded="true" signature="11924:11932" ph="&amp;##xe67a;" />
+            <marker date="1553692592959" expanded="true" signature="12274:12282" ph="&amp;##xe67b;" />
+            <marker date="1553692592959" expanded="true" signature="14242:14250" ph="&amp;##xe642;" />
+            <marker date="1553692592959" expanded="true" signature="14514:14522" ph="&amp;##xe640;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-ui/login/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1659">
+          <caret line="79" column="45" lean-forward="false" selection-start-line="79" selection-start-column="45" selection-end-line="79" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-ui/resources/common/jQuery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217098">
+          <caret line="10338" column="22" lean-forward="false" selection-start-line="10338" selection-start-column="22" selection-end-line="10338" selection-end-column="22" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-ui/common/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1953">
+          <caret line="93" column="61" lean-forward="false" selection-start-line="93" selection-start-column="61" selection-end-line="93" selection-end-column="61" />
+          <folding>
+            <element signature="n#script#1;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#script#2;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#script#3;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#7135#7542#0" expanded="false" />
+            <element signature="e#7576#9569#0" expanded="false" />
+            <element signature="e#9602#12714#0" expanded="false" />
+            <element signature="e#12749#14827#0" expanded="false" />
+            <element signature="e#14902#15548#0" expanded="false" />
+            <element signature="e#15587#16089#0" expanded="false" />
+            <element signature="e#16126#16634#0" expanded="false" />
+            <element signature="e#16673#17183#0" expanded="false" />
+            <element signature="e#16820#16868#0" expanded="false" />
+            <element signature="e#19174#20647#0" expanded="false" />
+            <element signature="e#21274#22335#0" expanded="false" />
+            <marker date="1553692592959" expanded="true" signature="8498:8510" ph="..." />
+            <marker date="1553692592959" expanded="true" signature="8990:8998" ph="&amp;##xe642;" />
+            <marker date="1553692592959" expanded="true" signature="9259:9267" ph="&amp;##xe640;" />
+            <marker date="1553692592959" expanded="true" signature="11296:11304" ph="&amp;##xe642;" />
+            <marker date="1553692592959" expanded="true" signature="11566:11574" ph="&amp;##xe640;" />
+            <marker date="1553692592959" expanded="true" signature="11924:11932" ph="&amp;##xe67a;" />
+            <marker date="1553692592959" expanded="true" signature="12274:12282" ph="&amp;##xe67b;" />
+            <marker date="1553692592959" expanded="true" signature="14242:14250" ph="&amp;##xe642;" />
+            <marker date="1553692592959" expanded="true" signature="14514:14522" ph="&amp;##xe640;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-ui/login/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-ui/resources/common/jQuery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217098">
+          <caret line="10338" column="22" lean-forward="true" selection-start-line="10338" selection-start-column="22" selection-end-line="10338" selection-end-column="22" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-ui/common/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1785">
+          <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="51" />
+          <folding>
+            <element signature="n#script#1;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#script#2;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#script#3;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#7135#7542#0" expanded="false" />
+            <element signature="e#7576#9569#0" expanded="false" />
+            <element signature="e#9602#12714#0" expanded="false" />
+            <element signature="e#12749#14827#0" expanded="false" />
+            <element signature="e#14902#15548#0" expanded="false" />
+            <element signature="e#15587#16089#0" expanded="false" />
+            <element signature="e#16126#16634#0" expanded="false" />
+            <element signature="e#16673#17183#0" expanded="false" />
+            <element signature="e#16820#16868#0" expanded="false" />
+            <element signature="e#19174#20647#0" expanded="false" />
+            <element signature="e#21274#22335#0" expanded="false" />
+            <marker date="1553692592959" expanded="true" signature="8498:8510" ph="..." />
+            <marker date="1553692592959" expanded="true" signature="8990:8998" ph="&amp;##xe642;" />
+            <marker date="1553692592959" expanded="true" signature="9259:9267" ph="&amp;##xe640;" />
+            <marker date="1553692592959" expanded="true" signature="11296:11304" ph="&amp;##xe642;" />
+            <marker date="1553692592959" expanded="true" signature="11566:11574" ph="&amp;##xe640;" />
+            <marker date="1553692592959" expanded="true" signature="11924:11932" ph="&amp;##xe67a;" />
+            <marker date="1553692592959" expanded="true" signature="12274:12282" ph="&amp;##xe67b;" />
+            <marker date="1553692592959" expanded="true" signature="14242:14250" ph="&amp;##xe642;" />
+            <marker date="1553692592959" expanded="true" signature="14514:14522" ph="&amp;##xe640;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layui-v2.4.5/文档与示例/GitHub.url">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/layui-v2.4.5/文档与示例/在线示例.url">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-ui/resources/layui/lay/modules/layer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="1" column="1948" lean-forward="false" selection-start-line="1" selection-start-column="1948" selection-end-line="1" selection-end-column="1948" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-ui/resources/common/jquery-3.3.1.min.js" />
+    <entry file="file://$PROJECT_DIR$/web-ui/resources/common/jQuery.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216846">
+          <caret line="10338" column="22" lean-forward="false" selection-start-line="10338" selection-start-column="22" selection-end-line="10338" selection-end-column="22" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es5.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="965" column="4" lean-forward="false" selection-start-line="965" selection-start-column="4" selection-end-line="965" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-ui/resources/layui/layui.all.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="4" column="3457" lean-forward="false" selection-start-line="4" selection-start-column="3457" selection-end-line="4" selection-end-column="3457" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-ui/common/topic.html" />
+    <entry file="file://$PROJECT_DIR$/web-ui/common/user.html" />
+    <entry file="file://$PROJECT_DIR$/web-ui/common/comment.html" />
+    <entry file="file://$PROJECT_DIR$/web-ui/common/menu.html" />
+    <entry file="file://$PROJECT_DIR$/web-ui/resources/common/comment.js" />
+    <entry file="file://$PROJECT_DIR$/web-ui/resources/common/topic.js" />
+    <entry file="file://$PROJECT_DIR$/web-ui/resources/common/user.js" />
+    <entry file="file://$PROJECT_DIR$/web-ui/resources/layui/layui.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="1" column="593" lean-forward="false" selection-start-line="1" selection-start-column="593" selection-end-line="1" selection-end-column="593" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.dom.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97188">
+          <caret line="4641" column="4" lean-forward="false" selection-start-line="4641" selection-start-column="4" selection-end-line="4641" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-ui/resources/layui/lay/modules/laydate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="311">
+          <caret line="1" column="4668" lean-forward="false" selection-start-line="1" selection-start-column="4668" selection-end-line="1" selection-end-column="4668" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/admin-web.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-ui/login/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="826">
+          <caret line="101" column="11" lean-forward="false" selection-start-line="76" selection-start-column="8" selection-end-line="101" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-ui/common/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="601">
+          <caret line="475" column="15" lean-forward="false" selection-start-line="475" selection-start-column="15" selection-end-line="475" selection-end-column="15" />
+          <folding>
+            <element signature="n#script#1;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#script#2;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#script#3;n#html#0;n#!!top" expanded="false" />
+            <element signature="e#7135#7542#0" expanded="false" />
+            <element signature="e#7576#9569#0" expanded="false" />
+            <element signature="e#9602#12714#0" expanded="false" />
+            <element signature="e#12749#14827#0" expanded="false" />
+            <element signature="e#14902#15548#0" expanded="false" />
+            <element signature="e#15587#16089#0" expanded="false" />
+            <element signature="e#16126#16634#0" expanded="false" />
+            <element signature="e#16673#17183#0" expanded="false" />
+            <element signature="e#16820#16868#0" expanded="false" />
+            <element signature="e#19174#20647#0" expanded="false" />
+            <element signature="e#21274#22335#0" expanded="false" />
+            <marker date="1553692592959" expanded="true" signature="8498:8510" ph="..." />
+            <marker date="1553692592959" expanded="true" signature="8990:8998" ph="&amp;##xe642;" />
+            <marker date="1553692592959" expanded="true" signature="9259:9267" ph="&amp;##xe640;" />
+            <marker date="1553692592959" expanded="true" signature="11296:11304" ph="&amp;##xe642;" />
+            <marker date="1553692592959" expanded="true" signature="11566:11574" ph="&amp;##xe640;" />
+            <marker date="1553692592959" expanded="true" signature="11924:11932" ph="&amp;##xe67a;" />
+            <marker date="1553692592959" expanded="true" signature="12274:12282" ph="&amp;##xe67b;" />
+            <marker date="1553692592959" expanded="true" signature="14242:14250" ph="&amp;##xe642;" />
+            <marker date="1553692592959" expanded="true" signature="14514:14522" ph="&amp;##xe640;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

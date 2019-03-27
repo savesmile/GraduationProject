@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登陆</title>
+    <link rel="stylesheet" href="../resources/layui/css/layui.css">
+    <style>
+        body {
+            background: #f0f0f0;
+        }
+
+        .login-contain {
+            width: 800px;
+            margin: 20% auto 0 auto;
+            background-color: #ffffff;
+            padding-bottom: 100px;
+        }
+
+        .login-title {
+            padding-top: 30px;
+        }
+
+        .login-form {
+            width: 400px;
+            margin: 100px auto 0 auto;
+        }
+    </style>
+</head>
+<body>
+<div class="layui-container">
+    <div class="layui-row">
+        <div class="login-contain">
+            <div class="login-title">
+                <fieldset class="layui-elem-field layui-field-title">
+                    <legend>admin后台登陆</legend>
+                </fieldset>
+            </div>
+
+            <div class="login-form">
+                <form class="layui-form" action="">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">用户名</label>
+                        <div class="layui-input-block">
+                            <input type="text" name="username" required lay-verify="required" placeholder="请输入用户名"
+                                   autocomplete="off"
+                                   class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">密码</label>
+                        <div class="layui-input-block">
+                            <input type="password" name="password" required lay-verify="required" placeholder="请输入密码"
+                                   autocomplete="off" class="layui-input">
+                        </div>
+                    </div>
+                    <div class="layui-form-item">
+                        <div class="layui-input-block">
+                            <button class="layui-btn" lay-submit lay-filter="login-form">立即提交</button>
+                            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script src="../resources/layui/layui.js"></script>
+<script>
+    layui.use('form', function () {
+        var baseUrl = 'http://localhost:10000';
+        var form = layui.form;
+        var $ = layui.jquery;
+        //监听提交
+        form.on('submit(login-form)', function (data) {
+            var postData = JSON.stringify(data.field);
+            $.ajax({
+                url: baseUrl + '/admin/login',
+                type: 'post',
+                data: postData,
+                async: false,
+                contentType: 'application/json',
+                success: function (data) {
+                    if (data.code) {
+                        layer.msg('用户名或密码不正确', {icon: 5, offset: '100px'});
+                    } else {
+                        localStorage.setItem("token", data.data.token);
+                        layer.msg('登陆成功',
+                            {icon: 1, offset: '100px', time: 1000},
+                            function () {
+                                location.reload();
+                            });
+                    }
+                },
+                error: function (data) {
+                    layer.msg('请求错误' + data)
+                }
+            });
+            return false;
+        });
+    });
+</script>
+</body>
+</html>
