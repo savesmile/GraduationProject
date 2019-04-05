@@ -17,13 +17,15 @@ import java.util.Map;
 import java.util.UUID;
 
 /**
- * @author F_lin
- * @since 2019/3/24
+ * 公用接口。主要是头像上传。
  **/
 @RestController
 @RequestMapping("/api/common")
 public class CommonController {
 
+    /**
+     * 别人免费的图床
+     */
     private static final String imageUpload = "http://106.12.90.33:10030/api/common/uploadByFile?type=avatar";
 
 

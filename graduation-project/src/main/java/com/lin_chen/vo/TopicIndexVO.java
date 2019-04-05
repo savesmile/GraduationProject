@@ -30,6 +30,10 @@ public class TopicIndexVO {
      */
     private String authorName;
     /**
+     * 作者头像
+     */
+    private String authorAvatar;
+    /**
      * 最后回答人
      */
     private String lastAnswerName;

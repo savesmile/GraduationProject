@@ -9,8 +9,7 @@ import lombok.experimental.Accessors;
 import java.util.Date;
 
 /**
- * @author F_lin
- * @since 2019/3/23
+ * 最后评论者
  **/
 @Setter
 @Getter

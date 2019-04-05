@@ -19,8 +19,7 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 /**
- * @author F_lin
- * @since 2019/3/23
+ * 帖子相关接口
  **/
 @RestController
 @RequestMapping("/api/topics")
@@ -36,28 +35,22 @@ public class TopicController {
     @GetMapping("/index")
     public Object getTopicList(
             @UserId(required = false) String userId,
+            @RequestParam(required = false) String authorId,
             @RequestParam(defaultValue = "0", required = false) Integer page,
             @RequestParam(defaultValue = "5", required = false) Integer size,
-            @RequestParam(required = false) String type,
-            @RequestParam(required = false) String keyWord) {
+            @RequestParam(required = false) String type) {
         Query query = new Query();
         query.with(new Sort(Sort.Direction.DESC, "createTime"));
 
-        if (StringUtils.isNotEmpty(userId)) {
+        if (StringUtils.isNotEmpty(authorId)) {
+            query.addCriteria(Criteria.where("userId").is(authorId));
+        } else if (StringUtils.isNotEmpty(userId)) {
             query.addCriteria(Criteria.where("userId").is(userId));
         }
 
-        if (StringUtils.isNotEmpty(type)) {
-            query.addCriteria(Criteria.where("type").is(type));
-            if (type.equals("boutique")) {
-                query.addCriteria(Criteria.where("isBoutique").is(true));
-            }
+        if (StringUtils.isNotEmpty(type) && type.equals("boutique")) {
+            query.addCriteria(Criteria.where("isBoutique").is(true));
         }
-
-        if (StringUtils.isNotEmpty(keyWord)) {
-            query.addCriteria(Criteria.where("title").regex(keyWord));
-        }
-
         int topicCount = (int) mongoOperations.count(query, Topic.class);
         query.skip((page - 1) * size);
         query.limit(size);
@@ -67,6 +60,7 @@ public class TopicController {
                 TopicIndexVO topicIndexVO = TopicIndexVO.switchTopicVO(topic);
                 SimpleUser author = userService.getUserById(topic.getUserId());
                 topicIndexVO.setAuthorName(author.getUsername());
+                topicIndexVO.setAuthorAvatar(author.getAvatar());
                 int count = commentService.getCommentCountByTopId(topic.getId());
                 topicIndexVO.setCommentNum(count);
                 LastCommentInFo lastCommentInfo = commentService.getLastCommentUser(topic.getId());

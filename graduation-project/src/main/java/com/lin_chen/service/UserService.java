@@ -10,8 +10,7 @@ import org.springframework.data.mongodb.core.query.Update;
 import org.springframework.stereotype.Service;
 
 /**
- * @author F_lin
- * @since 2019/3/23
+ * 用户相关逻辑
  **/
 @Service
 public class UserService {
@@ -27,8 +26,8 @@ public class UserService {
     public boolean updateUser(String userId, User user) {
         return mongoOperations.updateFirst(Query.query(Criteria.where("_id").is(userId)),
                 Update.update("username", user.getUsername())
-                        .set("nickName",user.getNickName())
-                .set("sex",user.getSex()),
+                        .set("nickName", user.getNickName())
+                        .set("sex", user.getSex()),
                 User.class).getModifiedCount() > 0;
     }
 

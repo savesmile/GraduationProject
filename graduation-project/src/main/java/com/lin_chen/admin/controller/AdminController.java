@@ -29,7 +29,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * 权限验证相关的接口
+ * 管理系统相关接口
  **/
 @RestController
 @RequestMapping("/admin")
@@ -44,6 +44,9 @@ public class AdminController {
     @Autowired
     CommentService commentService;
 
+    /**
+     * 管理员登陆
+     */
     @RequestMapping("/login")
     public JsonResult login(@RequestBody SignPosts signInPosts) {
         if (StringUtils.isEmpty(signInPosts.getPassword()) || StringUtils.isEmpty(signInPosts.getUsername()))
@@ -58,6 +61,9 @@ public class AdminController {
                 .with("info", admin.setPassword(null)).build());
     }
 
+    /**
+     * 获取所有用户
+     */
     @GetMapping("/get-users")
     public Object getUserLimit(@RequestParam(defaultValue = "0", required = false) Integer page,
                                @RequestParam(defaultValue = "5", required = false) Integer limit) {
@@ -66,6 +72,9 @@ public class AdminController {
         return AdminResult.success(users, count);
     }
 
+    /**
+     * 获取所有帖子
+     */
     @GetMapping("/get-topics")
     public Object getTopicsLimit(@RequestParam(defaultValue = "0", required = false) Integer page,
                                  @RequestParam(defaultValue = "5", required = false) Integer limit) {
@@ -87,6 +96,9 @@ public class AdminController {
         return AdminResult.success(result, count);
     }
 
+    /**
+     * 获取所有评论
+     */
     @GetMapping("/get-comments")
     public Object getCommentsLimit(@RequestParam(defaultValue = "0", required = false) Integer page,
                                    @RequestParam(defaultValue = "5", required = false) Integer limit) {
@@ -106,6 +118,9 @@ public class AdminController {
         return AdminResult.success(result, count);
     }
 
+    /**
+     * 删除 用户/主题/回复
+     */
     @DeleteMapping("/delete/{module}/{id}")
     public Object getCommentsLimit(@PathVariable("module") String module,
                                    @PathVariable("id") String id) {
@@ -124,6 +139,9 @@ public class AdminController {
         return AdminResult.success();
     }
 
+    /**
+     * 更新 /用户/主题/回复 相关信息
+     */
     @PostMapping("/update/{module}")
     public Object postData(@RequestBody JSONObject postBody,
                            @PathVariable("module") String module) {
@@ -146,7 +164,9 @@ public class AdminController {
         return flag ? AdminResult.success() : AdminResult.error("修改失败");
     }
 
-
+    /**
+     * 加精/取消加精帖子
+     */
     @PutMapping("/add_fine_topic/{id}/{option}")
     public Object postData(@PathVariable("id") String id, @PathVariable("option") String option) {
         boolean flag = mongoOperations.updateFirst(Query.query(Criteria.where("_id").is(id)),
@@ -156,7 +176,7 @@ public class AdminController {
     }
 
 
-    public User switchToUser(JSONObject postBody) {
+    private User switchToUser(JSONObject postBody) {
         User user = new User();
         user.setId(postBody.getString("id"));
         user.setUsername(postBody.getString("username"));
@@ -165,14 +185,14 @@ public class AdminController {
         return user;
     }
 
-    public Comment switchToComment(JSONObject postBody) {
+    private Comment switchToComment(JSONObject postBody) {
         Comment comment = new Comment();
         comment.setId(postBody.getString("id"));
         comment.setContent(postBody.getString("content"));
         return comment;
     }
 
-    public Topic switchToTopic(JSONObject postBody) {
+    private Topic switchToTopic(JSONObject postBody) {
         Topic topic = new Topic();
         topic.setId(postBody.getString("id"));
         topic.setType(postBody.getString("type"));

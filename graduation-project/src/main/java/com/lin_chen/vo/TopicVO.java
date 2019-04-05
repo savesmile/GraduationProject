@@ -9,10 +9,6 @@ import lombok.experimental.Accessors;
 import java.util.Date;
 import java.util.List;
 
-/**
- * @author F_lin
- * @since 2019/3/23
- **/
 @Setter
 @Getter
 @AllArgsConstructor

@@ -6,8 +6,7 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 /**
- * @author F_lin
- * @since 2019/3/23
+ * 简单的user实体
  **/
 @Setter
 @Getter

@@ -6,10 +6,6 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.experimental.Accessors;
 
-/**
- * @author F_lin
- * @since 2019/3/23
- **/
 @Setter
 @Getter
 @AllArgsConstructor

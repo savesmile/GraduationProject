@@ -19,8 +19,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 /**
- * @author F_lin
- * @since 2019/3/23
+ * 评论相关接口
  **/
 @RestController
 @RequestMapping("/api/comments")

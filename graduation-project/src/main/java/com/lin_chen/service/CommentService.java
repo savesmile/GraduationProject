@@ -13,8 +13,7 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 /**
- * @author F_lin
- * @since 2019/3/23
+ * 评论相关逻辑
  **/
 @Service
 public class CommentService {
